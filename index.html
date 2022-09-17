@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>trivia-game</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    
+    <py-env>
+        - paths:
+            - /main.py
+            - /data.py
+        
+        
+    </py-env>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+    <div class="game" id="game">
+        <h1 class="title" id="title">Trivia Game</h1>
+        <div id="output"></div>
+    <p class="play">
+        <button id="play" type="submit">Ready to Play?</button>
+    </p>
+    <p class="hidden" id="true_or_false">
+        <button id="true" name="true" type="submit" >TRUE</button>
+        <button id="false" name="false" type="submit">FALSE</button>
+    </p>
+        <p class="score" id="score"></p>
+        <button  id="play_again" class="hidden" type="submit">Play Again?</button>
+    </div>
+    <audio id="correct">
+        <source src="correct.wav" type="audio/wav">
+    </audio>
+    <audio id="wrong">
+        <source src="wrong.wav" type="audio/wav">
+    </audio>
+    <pyscript>
+
+    </pyscript>
+
+    <py-script src="./main.py"></py-script>
+    <py-script src="./data.py"></py-script>
+</body>

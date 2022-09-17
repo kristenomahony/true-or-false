@@ -1,0 +1,59 @@
+:root {
+    --clr-neon: hsl(317 100% 54%);
+
+}
+
+body {
+    background-color: black;
+    color: var(--clr-neon);
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    
+}
+
+.game {
+    margin-left: 20vw;
+    margin-bottom: 20vh;
+    padding: 50px;
+    width: 60vw;
+    height: 70vh;
+    border: 5px solid var(--clr-neon);
+    border-radius: 10px;;
+    text-shadow: 0 0 0.125em hsl(0 0% 100%/0.5), 0 0 0.45em var(--clr-neon);
+    box-shadow: 0 0 1em 0 var(--clr-neon);
+}
+  
+button {
+    width: 150px;
+    height: 50px;
+    border: 3px solid var(--clr-neon);
+    border-radius: 10px;
+    color: var(--clr-neon);
+    background-color: black;
+    cursor: pointer;
+    margin: 30px;
+    font-size: 20px;
+    text-shadow: 0 0 0.125em hsl(0 0% 100%/0.5), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    transition: background-color 100ms linear;
+}
+
+button:active
+ {
+    background-color: var(--clr-neon);
+    color: black;
+    text-shadow: none;
+}
+
+.play {
+    padding: 30px;
+
+}
+.score {
+    margin: 50px;
+}
+
+
+
